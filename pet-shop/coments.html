@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Mascotas</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">🐶 PetShop</div>
+    <ul>
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#products">Productos</a></li>
+      <li><a href="#comments">Comentarios</a></li>
+      <li><a href="#donations">Donaciones</a></li>
+    </ul>
+  </nav>
+  <!-- Sección Home -->
+  <section class="carousel">
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img
+          src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+          alt="Perro jugando">
+        <img
+          src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+          alt="Gato curioso">
+        <img
+          src="https://images.unsplash.com/photo-1558929996-da64ba858215?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+          alt="Conejo adorable">
+        <img
+          src="https://images.unsplash.com/photo-1594149929911-78975a43d4f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+          alt="Pájaros coloridos">
+      </div>
+    </div>
+    <button id="prevBtn" class="carousel-btn">&#10094;</button>
+    <button id="nextBtn" class="carousel-btn">&#10095;</button>
+  </section>
+  <!-- Sección Comentarios -->
+  <section id="comments" class="section">
+    <div class="comment-container">
+      <div class="comment-header">
+        <img src="https://cdn-icons-png.flaticon.com/512/3462/3462022.png" alt="Icono comentarios" class="comment-icon">
+        <h2>¡Déjanos tu Comentario!</h2>
+        <p>Tu opinión es importante para nosotros 🐾</p>
+      </div>
+      <form id="commentForm" class="comment-form">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Nombre" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder="Mensaje" required></textarea>
+        </div>
+        <div class="g-recaptcha" data-sitekey="6Les91ArAAAAAAHOCoFMP3pX48-RBoNFAzwhNPuj"></div>
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="form-group">
+        <div id="commentsList"></div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2023 PetShop. Todos los derechos reservados.</p>
+  </footer>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="./js/coments.js"></script>
+  <script src="./js/validcomments.js"></script>
+</body>
+
+</html>

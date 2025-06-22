@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Mascotas</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">🐶 PetShop</div>
+    <ul>
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#products">Productos</a></li>
+      <li><a href="./coments.html">Comentarios</a></li>
+      <li><a href="./donation.html">Donaciones</a></li>
+      <li>
+        <a href="./login.html" id="loginBtn">Iniciar Sesión</a>
+        <a href="./admin.html" id="adminLink" style="display:none;">Panel Admin</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Sección Home -->
+  <section class="carousel">
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img
+          src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+          alt="Perro jugando">
+        <img
+          src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+          alt="Gato curioso">
+        <img
+          src="https://images.unsplash.com/photo-1558929996-da64ba858215?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+          alt="Conejo adorable">
+        <img
+          src="https://images.unsplash.com/photo-1594149929911-78975a43d4f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+          alt="Pájaros coloridos">
+      </div>
+    </div>
+    <button id="prevBtn" class="carousel-btn">&#10094;</button>
+    <button id="nextBtn" class="carousel-btn">&#10095;</button>
+  </section>
+  <section class="products">
+    <div class="product-card">
+      <div class="product-image"
+        style="background-image: url('https://walmartcr.vtexassets.com/arquivos/ids/608817/Alimento-Para-Gato-Gati-Mar-Y-Tierra-Adulto-M-s-De-12-Meses-8kg-1-96773.jpg?v=638514705892630000');width: 320px;height: 300px;">
+      </div>
+      <div class="product-info">
+        <h3>Alimento para gato adulto</h3>
+        <p>Alimento premium 8kg</p>
+        <p class="price">$20</p>
+        <a href="#" class="btn">Añadir al carrito</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image"
+        style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_o4JzPPU2ODNxkPZ-QJci5ybuxhjwvd7dnw&s');width: 320px;height: 300px;">
+      </div>
+      <div class="product-info">
+        <h3>Alimento para gatos bebes</h3>
+        <p>Alimento para gatos cachorros 1kg</p>
+        <p class="price">$6</p>
+        <a href="#" class="btn">Añadir al carrito</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image"
+        style="background-image: url('https://blondi.com.ar/wp-content/uploads/2023/01/Varita-con-plumas-o-juguete-Juguetes-para-Gatos3.jpg') ;width: 320px;height: 300px;  ">
+      </div>
+      <div class="product-info">
+        <h3>Juguete para gatos</h3>
+        <p>Varita con plumas</p>
+        <p class="price">$5</p>
+        <a href="#" class="btn">Añadir al carrito</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image"
+        style="background-image: url(https://equiporocket.com/wp/wp-content/uploads/2023/11/Snack-para-gatos-Cremi-1.jpg);width: 320px;height: 300px;">
+      </div>
+      <div class="product-info">
+        <h3>Premios</h3>
+        <p>Premios variados para gatos</p>
+        <p class="price">$7</p>
+        <a href="#" class="btn">Añadir al carrito</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 PetShop. Todos los derechos reservados.</p>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

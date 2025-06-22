@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin - PetShop</title>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+	<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<nav>
+		<div class="logo">🐶 PetShop Admin</div>
+		<ul>
+			<li id="userProfile">
+				<!-- Perfil dinámico se insertará aquí -->
+			</li>
+			<li id="userLogin"><a href="#" id="logoutBtn">Cerrar Sesión</a></li>
+		</ul>
+	</nav>
+
+	<section class="admin-section">
+		<h1>Panel de Administración</h1>
+
+		<div class="admin-card">
+			<h2>💰 Historial de Donaciones</h2>
+			<div class="table-container">
+				<table id="donationsTable">
+					<thead>
+						<tr>
+							<th>id</th>
+							<th>Nombre</th>
+							<th>Descripción</th>
+							<th>Referencia</th>
+							<th>Fecha</th>
+							<th>Status</th>
+							<th>Moneda</th>
+							<th>Monto</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Datos se cargarán dinámicamente -->
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		</div>
+	</section>
+
+
+	<script type="module" src="./js/auth.js"></script>
+	<script type="module" src="./js/admin.js"></script>
+</body>
+
+</html>
